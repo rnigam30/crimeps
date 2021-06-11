@@ -1,0 +1,5 @@
+SELECT * FROM
+								(SELECT caseid,casename,crime ,row_number() over (ORDER BY caseid) as rn from crime.fir) T1
+								,
+								(SELECT criminalid,criminalname ,row_number() over (ORDER BY criminalid) as rn from crime.criminal) T2
+								where T1.rn=T2.rn"

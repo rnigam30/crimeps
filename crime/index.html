@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Prediction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <div class="search">
+                    <li><a href="admin/alogin.php">Admin Login</a></li>
+                    <li><a href="police/plogin.php">Police Login</a></li>
+                </div>
+            </ul>
+        </div>
+    </header>
+    <div class="heading" id="home">
+        <center>
+            <p>Crime Prediction System</p>
+        </center>
+        <p class="content">
+            &quot; Crime analysis and prevention is a systematic approach for identifying and analyzing patterns and
+            trends in crime. &quot;
+
+        </p>
+    </div>
+    <section id="about">
+        <center>
+            <h1>About Us</h1>
+        </center>
+        <center>
+            <p class="a">
+                Crimes are a common social problem affecting the quality of life and the economic growth of a society.
+                It is considered an essential factor that determines whether or not people move to a new city and what
+                places should be avoided when they travel. With the increase of crimes, law enforcement agencies are
+                continuing to demand advanced geographic information systems and new web application approaches to
+                improve crime analytics and better protect their communities.Although crimes could occur everywhere, it
+                is common that criminals work on crime opportunities they face in most familiar areas for them. By
+                providing a technology approach to determine the most criminal hotspots and find the type, location
+                and<span id="dots">....</span><span id="more">
+                    time of committed crimes, we hope to raise people’s awareness regarding the dangerous locations in
+                    certain time periods.Therefore, our proposed solution can potentially help people stay away from the
+                    locations at a certain time of the day along with saving lives. In addition, having this kind of
+                    knowledge would help people to improve their living place choices. On the other hand, police forces
+                    can
+                    use this solution to increase the level of crime prediction and prevention. Moreover, this would be
+                    useful for police resources allocation. It can help in the distribution of police at most likely
+                    crime
+                    places for any given time, to grant an efficient usage of police resources. By having all of this
+                    information available, we hope to make our community safer for the people living there and also for
+                    others who will travel there.</span>
+                <a onclick="myFunction()" id="myBtn">Read more</a>
+            </p>
+        </center>
+    </section>
+
+    <center>
+        <footer class="footer"><a href="registration/register.php">Sign Up</a></footer>
+        <footer class="foot">Copyright © www.CrimePredictionSystem.com. All rights reserved!</footer>
+    </center>
+
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+            var hamburger = document.querySelector(".hamburger");
+            var wrapper = document.querySelector(".wrapper");
+            var backdrop = document.querySelector(".backdrop");
+
+            hamburger.addEventListener("click", function () {
+                wrapper.classList.add("active");
+            })
+
+            backdrop.addEventListener("click", function () {
+                wrapper.classList.remove("active");
+            })
+
+
+    </script>
+</body>
+
+</html>

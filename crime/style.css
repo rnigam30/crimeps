@@ -1,0 +1,130 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto Slab', serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar {
+    height: 80px;
+    position: sticky;
+    opacity: 0.9;
+}
+
+/* .navbar ul {
+    overflow: auto;
+} */
+
+.navbar li {
+    float: left;
+    list-style: none;
+    margin: 15px 25px;
+    padding: 8px 5px;
+}
+.navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+ }
+.navbar li a {
+    padding: 27px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+}
+.navbar li a:hover{
+    color: rgb(168, 46, 46);    
+    text-decoration: underline;
+}
+
+.hamburger{
+    color: wheat;
+    cursor: pointer;
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+.navbar .hamburger{
+    display: flex;
+    flex-direction: row;
+}
+.search{
+    float: right;
+}
+.heading{
+    padding: 185px 0px;
+    color: wheat;
+    background: url("img1.jpg") no-repeat center center/cover;
+    opacity: 0.9;
+}
+
+.heading p{
+    font-family: 'Fredoka One', cursive;
+    align-items: center;
+    font-size: 50px;
+}
+#about{
+    color:black;
+    font-size: 1rem;
+    padding: 2px;
+    /* height: 300px; */
+}
+.content{
+    font-size: 38px !important;
+    padding: 17px 20px;
+    text-align: center;
+}
+.a{
+    border: 2px solid black; 
+    border-radius: 20px;
+    padding: 18px 12px;
+    width: 95%;
+}
+#about h1{
+    font-size: 50px;
+    padding: 5px 0px;
+}
+.foot{
+    background: black;
+    color: white;
+    padding: 3px 20px;
+    text-align: center;
+    opacity: 0.7;
+    width: 90%;
+} 
+.footer{
+    background-color: black;
+    width: 38%;
+    padding: 3px 12px;
+    opacity: 0.7;
+    margin-top: 4px;
+    
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+    /* font-weight: 900; */
+    font-size: 23px;
+}
+#more{
+    display: none;
+}
+#myBtn{
+    border: none;
+    color: blue;
+    background-color: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+@media (max-width: 750px){
+     .hamburger{
+		display: inline-block;
+	}   
+}
